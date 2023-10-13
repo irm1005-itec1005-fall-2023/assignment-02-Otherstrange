@@ -8,8 +8,8 @@ body {
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  background-color: rgb(235, 226, 226);
 }
-
 
 header {
   display:flex;
@@ -64,12 +64,85 @@ main {
   margin:auto;
   margin-top:2rem;
   margin-bottom:2rem;
-  padding:1rem;
+  padding:2rem;
   border: 0.5rem solid #a4e2df;
   border-radius:1rem;
-  width:80%;
+  width:70%;
+  background-color: white;
+}
+
+main .maincontainer {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+main .rotomsummary {
+  display:flex;
 }
 
 main .rotomsummarytext {
-  
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color: red;
+  padding:2rem;
+}
+
+main .rotomsummary img {
+  border: 0.2rem solid #000000;
+  border-radius:1rem;
+  height:30rem;
+}
+
+footer {
+  display:flex;
+  justify-content:start;
+  background-color: #ee8249;
+  align-items:center;
+  color:white;
+  font-size:2rem;
+}
+
+footer h2 {
+  font-size:0px;
+}
+
+footer img {
+  height:5rem;
+  margin:1rem 1rem 1rem 2rem;
+}
+
+footer .footernav {
+  display:flex;
+  margin:1rem 2rem 1rem 1rem;
+  margin-left: auto;
+  align-items:center;
+  gap:2rem;
+}
+
+footer h3 {
+  font-size:0px;
+}
+
+footer nav ul {
+  display:flex;
+  gap:2rem;
+  list-style:none;
+  font-size:1.2rem;
+}
+
+footer nav ul li a {
+  color:white;
+  text-decoration:none;
+
+}
+
+footer nav ul li a:hover {
+  text-decoration:underline;
+  color:#82e9e4;
+}
+
+footer .footernav p {
+  font-size:1rem;
 }
