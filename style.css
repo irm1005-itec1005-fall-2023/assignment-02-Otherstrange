@@ -243,14 +243,70 @@ main .rotomforms {
   border-top:0.2rem solid rgb(230, 230, 230);
 }
 
+main .allforms {
+  display:flex;
+  flex-direction:row;
+  background-color: #FAE078;
+  border:0.2rem solid #000000;
+  border-radius:1rem;
+  padding:1rem;
+}
 
+main .allforms h3,
+main .allforms p {
+  text-align:center;
+}
 
+main .baserotomsect,
+main .heatrotomsect,
+main .frostrotomsect,
+main .mowrotomsect,
+main .washrotomsect,
+main .fanrotomsect {
+  background-color: #FFFFFF;
+  border-radius:1rem;
+  margin:0 0.2rem 0 0.2rem;
+}
 
+main .electrictype,
+main .firetype,
+main .icetype,
+main .watertype,
+main .grasstype,
+main .ghosttype,
+main .flyingtype {
+  color:white;
+  padding:0.1rem;
+  border-radius:0.2rem;
+}
 
+main .electrictype {
+  background-color: #FAE078;
+}
 
+main .ghosttype {
+  background-color: #705898;
+}
 
+main .firetype {
+  background-color: #F5AC78;
+}
 
+main .icetype {
+  background-color: #BCE6E6;
+}
 
+main .watertype {
+  background-color: #9DB7F5;
+} 
+
+main .grasstype {
+  background-color: #A7DB8D;
+} 
+
+main .flyingtype {
+  background-color: #C6B7F5;
+} 
 
 footer {
   display:flex;
