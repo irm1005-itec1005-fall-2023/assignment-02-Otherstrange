@@ -151,7 +151,7 @@ main .rotomstats {
   display:flex;
   flex-direction:column;
   align-items:left;
-  padding:2rem 0rem 2rem 0;
+  padding:1rem 0rem 2rem 0;
   border-top:0.2rem solid rgb(230, 230, 230);
   width:100%
 }
@@ -239,8 +239,16 @@ main .rotomforms {
   display:flex;
   flex-direction:column;
   align-items:left;
-  padding:2rem;
+  padding:2rem auto;
   border-top:0.2rem solid rgb(230, 230, 230);
+}
+
+main .rotomforms p {
+  padding:1rem 0 1rem 0;
+}
+
+main .rotomforms h2 {
+  padding-top:1rem;
 }
 
 main .allforms {
@@ -289,24 +297,55 @@ main .ghosttype {
 }
 
 main .firetype {
-  background-color: #F5AC78;
+  background-color: #F08030;
 }
 
 main .icetype {
-  background-color: #BCE6E6;
+  background-color: #98D8D8;
 }
 
 main .watertype {
-  background-color: #9DB7F5;
+  background-color: #6890F0;
 } 
 
 main .grasstype {
-  background-color: #A7DB8D;
+  background-color: #78C850;
 } 
 
 main .flyingtype {
-  background-color: #C6B7F5;
+  background-color: #A890F0;
 } 
+
+main .altforms {
+  display:flex;
+  flex-direction:row;
+  background-color: #FAE078;
+  border:0.2rem solid #000000;
+  border-radius:1rem;
+  padding:1rem;
+}
+
+main .altforms h3,
+main .altforms p {
+  text-align:center;
+}
+
+main .rotomdex,
+main .rotomphone,
+main .rotomdrone,
+main .rotomi {
+  background-color: #FFFFFF;
+  border-radius:1rem;
+  margin:0 0.2rem 0 0.2rem;
+}
+
+main .rotomdex {
+  padding:0 1rem 0 1rem;
+}
+
+main .rotomphone {
+  padding-bottom:1rem;
+}
 
 footer {
   display:flex;
