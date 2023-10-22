@@ -115,7 +115,7 @@ main .rotombiology {
   display:flex;
   flex-direction:column;
   align-items:left;
-  padding:2rem 2rem 2rem 0;
+  padding:2rem 0rem 2rem 0;
   border-top:0.2rem solid rgb(230, 230, 230);
 }
 
@@ -127,7 +127,6 @@ main .biologyfirstparaandimg {
   display:flex;
   flex-direction:row;
   align-items:left;
-  padding-bottom:2rem;
 }
 
 main .biologyfirstpara {
@@ -142,20 +141,71 @@ main .biologyjustpara p {
 
 main .biologyfirstparaandimg img {
   display:flex;
-  flex-direction: column;
   align-items:center;
+  height:350px;
   border: 0.2rem solid #000000;
   border-radius:1rem;
   margin:2rem 0 2rem 0;
-  height:350px;
 }
 
 main .rotomstats {
   display:flex;
   flex-direction:column;
   align-items:left;
-  padding:2rem;
+  padding:2rem 0rem 2rem 0;
   border-top:0.2rem solid rgb(230, 230, 230);
+  width:100%
+}
+
+main .allstatsbox {
+  display:flex;
+  flex-direction:row;
+}
+
+main .basestats {
+  display:flex;
+  flex-direction:column;
+  width:50%;
+  background-color: red;
+  padding-right:1rem;
+}
+
+main .basestatstable {
+  background-color: #FAE078;
+  border:0.2rem solid #000000;
+  border-radius:1rem;
+}
+
+main .basestatstable thead th:nth-child(1) {
+  background-color: blue;
+}
+
+main .basestatstable thead th:nth-child(2) {
+  background-color: blue;
+}
+
+main .basestatstable thead th:nth-child(3) {
+  background-color: blue;
+}
+
+main .basestatstable thead th:nth-child(4) {
+  background-color: blue;
+}
+
+main .basestatstable thead th:nth-child(5) {
+  background-color: blue;
+}
+
+main .basestatstable thead th:nth-child(6) {
+  background-color: blue;
+}
+
+main .formstats {
+  display:flex;
+  flex-direction:column;
+  width:50%;
+  background-color: blue;
+  padding-left:1rem;
 }
 
 
