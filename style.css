@@ -62,8 +62,7 @@ main {
   flex-direction:column;
   align-items:center;
   margin:auto;
-  margin-top:2rem;
-  margin-bottom:2rem;
+  margin: 2rem auto;
   padding:2rem;
   border: 0.5rem solid #a4e2df;
   border-radius:1rem;
@@ -162,53 +161,79 @@ main .allstatsbox {
   flex-direction:row;
 }
 
-main .basestats {
-  display:flex;
-  flex-direction:column;
-  width:50%;
-  background-color: red;
-  padding-right:1rem;
+main .allstatsbox p {
+  padding:0.5rem 0 0.5rem 0;
 }
 
+main .formstats {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding:0 0 0 1rem;
+}
+
+main .basestats {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding:0 1rem 0 0;
+}
+
+main .formstatstable,
 main .basestatstable {
   background-color: #FAE078;
   border:0.2rem solid #000000;
   border-radius:1rem;
+  padding:0 1rem 0 1rem;
 }
 
-main .basestatstable thead th:nth-child(1) {
-  background-color: blue;
+main .allstatsbox tbody td,
+main .allstatsbox thead th {
+  text-align:center;
+  padding:0.5rem;
 }
 
-main .basestatstable thead th:nth-child(2) {
-  background-color: blue;
+main .allstatsbox thead th:nth-child(1) {
+    background-color: #FF5959;
+    border-top-left-radius:1rem;
 }
 
-main .basestatstable thead th:nth-child(3) {
-  background-color: blue;
+main .allstatsbox tbody td:nth-child(1) {
+    background-color: #FF5959;
+    border-bottom-left-radius:1rem;
 }
 
-main .basestatstable thead th:nth-child(4) {
-  background-color: blue;
+main .allstatsbox thead th:nth-child(2),
+main .allstatsbox tbody td:nth-child(2) {
+    background-color: #F5AC78;
+} 
+
+main .allstatsbox thead th:nth-child(3),
+main .allstatsbox tbody td:nth-child(3)  {
+    background-color: #FAE078;
 }
 
-main .basestatstable thead th:nth-child(5) {
-  background-color: blue;
+main .allstatsbox thead th:nth-child(4),
+main .allstatsbox tbody td:nth-child(4)   {
+    background-color: #9DB7F5;
 }
 
-main .basestatstable thead th:nth-child(6) {
-  background-color: blue;
+main .allstatsbox thead th:nth-child(5),
+main .allstatsbox tbody td:nth-child(5) {
+    background-color: #A7DB8D;
 }
 
-main .formstats {
-  display:flex;
-  flex-direction:column;
-  width:50%;
-  background-color: blue;
-  padding-left:1rem;
+main .allstatsbox thead th:nth-child(6) {
+    background-color: #FA92B2;
+    border-top-right-radius:1rem;
 }
 
+main .allstatsbox tbody td:nth-child(6) {
+    background-color: #FA92B2;
+    border-bottom-right-radius:1rem;
+}
 
+/* This table section used to be way bigger. I'm pretty happy with how much smaller it is now. */
 
 main .rotomforms {
   display:flex;
@@ -217,13 +242,6 @@ main .rotomforms {
   padding:2rem;
   border-top:0.2rem solid rgb(230, 230, 230);
 }
-
-
-
-
-
-
-
 
 
 
@@ -285,3 +303,6 @@ footer nav ul li a:hover {
 footer .footernav p {
   font-size:1rem;
 }
+
+/* ChatGPT did help with some of this. I wrote the CSS, and ChatGPT recommended some things to make it look better. I picked which recommendations to use,
+should be pretty obvious with the commas in some of these. It's pretty useful, or maybe I just don't know how to do it better? */
