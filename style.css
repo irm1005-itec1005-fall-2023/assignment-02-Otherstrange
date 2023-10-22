@@ -182,9 +182,8 @@ main .basestats {
 main .formstatstable,
 main .basestatstable {
   background-color: #FAE078;
-  border:0.2rem solid #000000;
   border-radius:1rem;
-  padding:0 1rem 0 1rem;
+  padding:0.5rem 1rem 0.5rem 1rem;
 }
 
 main .allstatsbox tbody td,
@@ -241,6 +240,8 @@ main .rotomforms {
   align-items:left;
   padding:2rem auto;
   border-top:0.2rem solid rgb(230, 230, 230);
+  width:95%;
+  padding-bottom:2rem;
 }
 
 main .rotomforms p {
@@ -255,7 +256,6 @@ main .allforms {
   display:flex;
   flex-direction:row;
   background-color: #FAE078;
-  border:0.2rem solid #000000;
   border-radius:1rem;
   padding:1rem;
 }
@@ -320,7 +320,6 @@ main .altforms {
   display:flex;
   flex-direction:row;
   background-color: #FAE078;
-  border:0.2rem solid #000000;
   border-radius:1rem;
   padding:1rem;
 }
@@ -345,6 +344,46 @@ main .rotomdex {
 
 main .rotomphone {
   padding-bottom:1rem;
+}
+
+main .bold {
+  font-weight:bold;
+}
+
+main .newsletter {
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+  padding:2rem auto;
+  border-top:0.2rem solid rgb(230, 230, 230);
+  width:95%;
+}
+
+main .newsletter h2 {
+  padding:1rem 0 1rem 0;
+}
+
+main .newsletter p {
+  padding-bottom:1rem;
+}
+
+main .newsletter form {
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+  background-color: #FAE078;
+  padding:0.5rem 1rem 1rem 1rem;
+  border-radius:1rem;
+}
+
+main .newsletter fieldset {
+  display:flex;
+  flex-direction:row;
+  border:none;
+}
+
+main label, input {
+  margin:0.5rem;
 }
 
 footer {
