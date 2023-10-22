@@ -84,25 +84,32 @@ main .maincontainer {
 
 main .rotomsummary {
   display:flex;
-  border-top:0.2rem solid rgb(230, 230, 230);
+  border-top:0.2rem solid #e6e6e6;
 }
 
 main .rotomsummarytext {
   display:flex;
   flex-direction:column;
   align-items:left;
-  padding:2rem 2rem 2rem 0;
+  padding:2rem 2rem 2rem 0rem;
 }
 
-main .rotomimageback {
+main .rotomsummarytext p {
+  padding-bottom:1rem;
+}
+
+main .rotomsummarytext h2 {
+  padding-bottom:1rem;
+}
+
+main .rotomimage {
   display:flex;
   align-items:center;
+  width:150%;
   border: 0.2rem solid #000000;
   border-radius:1rem;
   margin:2rem 0 2rem 0;
-  background-color:#FAE078;
 }
-
 
 main .rotombiology {
   display:flex;
@@ -112,22 +119,35 @@ main .rotombiology {
   border-top:0.2rem solid rgb(230, 230, 230);
 }
 
-main .biologyfirstparaimg {
-  display:flex;
+main .biologyjustfirstpara h2 {
+  padding-bottom:1rem;
 }
 
-main .rotombiology img {
+main .biologyfirstparaandimg {
   display:flex;
+  flex-direction:row;
+  align-items:left;
+  padding-bottom:2rem;
+}
+
+main .biologyfirstpara {
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+}
+
+main .biologyjustpara p {
+  padding:1rem 2rem 0 0;
+}
+
+main .biologyfirstparaandimg img {
+  display:flex;
+  flex-direction: column;
   align-items:center;
   border: 0.2rem solid #000000;
   border-radius:1rem;
   margin:2rem 0 2rem 0;
-  background-color:#FAE078;
-  height:30rem;
-}
-
-main .rotombiology p {
-  padding:2rem 2rem 2rem 0;
+  height:350px;
 }
 
 main .rotomstats {
