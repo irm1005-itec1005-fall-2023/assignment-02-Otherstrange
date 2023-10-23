@@ -5,15 +5,438 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fb8500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background-color: rgb(235, 226, 226);
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: #023047;
+header {
+  display:flex;
+  justify-content:start;
+  background-color: #ee8249;
+  align-items:center;
+  color:white;
+  font-size:2rem;
 }
+
+header h2 {
+  font-size:0px;
+}
+
+header img {
+  height:5rem;
+  margin:1rem 1rem 1rem 2rem;
+}
+
+header nav {
+  display:flex;
+  margin:1rem 2rem 1rem 1rem;
+  margin-left: auto;
+}
+
+header h3 {
+  font-size:0px;
+}
+
+header nav ul {
+  display:flex;
+  gap:2rem;
+  list-style:none;
+  font-size:1.2rem;
+}
+
+header nav ul li a {
+  color:white;
+  text-decoration:none;
+
+}
+
+header nav ul li a:hover {
+  text-decoration:underline;
+  color:#82e9e4;
+}
+
+main {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:auto;
+  margin: 2rem auto;
+  padding:2rem;
+  border: 0.5rem solid #a4e2df;
+  border-radius:1rem;
+  width:65%;
+  background-color: white;
+}
+
+main h1 {
+  margin-bottom:1rem;
+}
+
+main .maincontainer {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:95%;
+}
+
+main .rotomsummary {
+  display:flex;
+  border-top:0.2rem solid #e6e6e6;
+}
+
+main .rotomsummarytext {
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+  padding:2rem 2rem 2rem 0rem;
+}
+
+main .rotomsummarytext p {
+  padding-bottom:1rem;
+}
+
+main .rotomsummarytext h2 {
+  padding-bottom:1rem;
+}
+
+main .rotomimage {
+  display:flex;
+  align-items:center;
+  width:150%;
+  border: 0.2rem solid #000000;
+  border-radius:1rem;
+  margin:2rem 0 2rem 0;
+}
+
+main .rotombiology {
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+  padding:2rem 0rem 2rem 0;
+  border-top:0.2rem solid rgb(230, 230, 230);
+}
+
+main .biologyjustfirstpara h2 {
+  padding-bottom:1rem;
+}
+
+main .biologyfirstparaandimg {
+  display:flex;
+  flex-direction:row;
+  align-items:left;
+}
+
+main .biologyfirstpara {
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+}
+
+main .biologyjustpara p {
+  padding:1rem 2rem 0 0;
+}
+
+main .biologyfirstparaandimg img {
+  display:flex;
+  align-items:center;
+  height:350px;
+  border: 0.2rem solid #000000;
+  border-radius:1rem;
+  margin:2rem 0 2rem 0;
+}
+
+main .rotomstats {
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+  padding:1rem 0rem 2rem 0;
+  border-top:0.2rem solid rgb(230, 230, 230);
+  width:100%
+}
+
+main .allstatsbox {
+  display:flex;
+  flex-direction:row;
+}
+
+main .allstatsbox p {
+  padding:0.5rem 0 0.5rem 0;
+}
+
+main .formstats {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding:0 0 0 1rem;
+}
+
+main .basestats {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding:0 1rem 0 0;
+}
+
+main .formstatstable,
+main .basestatstable {
+  background-color: #FAE078;
+  border-radius:1rem;
+  padding:0.5rem 1rem 0.5rem 1rem;
+}
+
+main .allstatsbox tbody td,
+main .allstatsbox thead th {
+  text-align:center;
+  padding:0.5rem;
+}
+
+main .allstatsbox thead th:nth-child(1) {
+    background-color: #FF5959;
+    border-top-left-radius:1rem;
+}
+
+main .allstatsbox tbody td:nth-child(1) {
+    background-color: #FF5959;
+    border-bottom-left-radius:1rem;
+}
+
+main .allstatsbox thead th:nth-child(2),
+main .allstatsbox tbody td:nth-child(2) {
+    background-color: #F5AC78;
+} 
+
+main .allstatsbox thead th:nth-child(3),
+main .allstatsbox tbody td:nth-child(3)  {
+    background-color: #FAE078;
+}
+
+main .allstatsbox thead th:nth-child(4),
+main .allstatsbox tbody td:nth-child(4)   {
+    background-color: #9DB7F5;
+}
+
+main .allstatsbox thead th:nth-child(5),
+main .allstatsbox tbody td:nth-child(5) {
+    background-color: #A7DB8D;
+}
+
+main .allstatsbox thead th:nth-child(6) {
+    background-color: #FA92B2;
+    border-top-right-radius:1rem;
+}
+
+main .allstatsbox tbody td:nth-child(6) {
+    background-color: #FA92B2;
+    border-bottom-right-radius:1rem;
+}
+
+/* This table section used to be way bigger. I'm pretty happy with how much smaller it is now. */
+
+main .rotomforms {
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+  padding:2rem auto;
+  border-top:0.2rem solid rgb(230, 230, 230);
+  width:95%;
+  padding-bottom:2rem;
+}
+
+main .rotomforms p {
+  padding:1rem 0 1rem 0;
+}
+
+main .rotomforms h2 {
+  padding-top:1rem;
+}
+
+main .allforms {
+  display:flex;
+  flex-direction:row;
+  background-color: #FAE078;
+  border-radius:1rem;
+  padding:1rem;
+}
+
+main .allforms h3,
+main .allforms p {
+  text-align:center;
+}
+
+main .baserotomsect,
+main .heatrotomsect,
+main .frostrotomsect,
+main .mowrotomsect,
+main .washrotomsect,
+main .fanrotomsect {
+  background-color: #FFFFFF;
+  border-radius:1rem;
+  margin:0 0.2rem 0 0.2rem;
+}
+
+main .electrictype,
+main .firetype,
+main .icetype,
+main .watertype,
+main .grasstype,
+main .ghosttype,
+main .flyingtype {
+  color:white;
+  padding:0.1rem;
+  border-radius:0.2rem;
+}
+
+main .electrictype {
+  background-color: #FAE078;
+}
+
+main .ghosttype {
+  background-color: #705898;
+}
+
+main .firetype {
+  background-color: #F08030;
+}
+
+main .icetype {
+  background-color: #98D8D8;
+}
+
+main .watertype {
+  background-color: #6890F0;
+} 
+
+main .grasstype {
+  background-color: #78C850;
+} 
+
+main .flyingtype {
+  background-color: #A890F0;
+} 
+
+main .altforms {
+  display:flex;
+  flex-direction:row;
+  background-color: #FAE078;
+  border-radius:1rem;
+  padding:1rem;
+}
+
+main .altforms h3,
+main .altforms p {
+  text-align:center;
+}
+
+main .rotomdex,
+main .rotomphone,
+main .rotomdrone,
+main .rotomi {
+  background-color: #FFFFFF;
+  border-radius:1rem;
+  margin:0 0.2rem 0 0.2rem;
+}
+
+main .rotomdex {
+  padding:0 1rem 0 1rem;
+}
+
+main .rotomphone {
+  padding-bottom:1rem;
+}
+
+main .bold {
+  font-weight:bold;
+}
+
+main .newsletter {
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+  padding:2rem auto;
+  border-top:0.2rem solid rgb(230, 230, 230);
+  width:95%;
+}
+
+main .newsletter h2 {
+  padding:1rem 0 1rem 0;
+}
+
+main .newsletter p {
+  padding-bottom:1rem;
+}
+
+main .newsletter form {
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+  background-color: #FAE078;
+  padding:0.5rem 1rem 1rem 1rem;
+  border-radius:1rem;
+}
+
+main .newsletter fieldset {
+  display:flex;
+  flex-direction:row;
+  border:none;
+}
+
+main label, input {
+  margin:0.5rem;
+}
+
+footer {
+  display:flex;
+  justify-content:start;
+  background-color: #ee8249;
+  align-items:center;
+  color:white;
+  font-size:2rem;
+}
+
+footer h2 {
+  font-size:0px;
+}
+
+footer img {
+  height:5rem;
+  margin:1rem 1rem 1rem 2rem;
+}
+
+footer .footernav {
+  display:flex;
+  margin:1rem 2rem 1rem 1rem;
+  margin-left: auto;
+  align-items:center;
+  gap:2rem;
+}
+
+footer h3 {
+  font-size:0px;
+}
+
+footer nav ul {
+  display:flex;
+  gap:2rem;
+  list-style:none;
+  font-size:1.2rem;
+}
+
+footer nav ul li a {
+  color:white;
+  text-decoration:none;
+
+}
+
+footer nav ul li a:hover {
+  text-decoration:underline;
+  color:#82e9e4;
+}
+
+footer .footernav p {
+  font-size:1rem;
+}
+
+/* ChatGPT did help with some of this. I wrote the CSS, and ChatGPT recommended some things to make it look better. I picked which recommendations to use,
+should be pretty obvious with the commas in some of these. It's pretty useful, or maybe I just don't know how to do it better? */
